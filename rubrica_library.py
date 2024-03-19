@@ -1,10 +1,11 @@
 import requests
 
+ipaddr="localhost"
+
 class Rubrica:
-    url_base="http://localhost:8080/"
-    token=""
-    
     def __init__(self):
+        self.url_base="http://"+ipaddr+":8080/"
+        self.token=""
         pass
 
     def registraUtente(self,usr,psw):
